@@ -1,0 +1,67 @@
+/**
+ * Milkpopup of milkui-component
+ * @author caiyongmin
+ *
+ * Copyright 2017-2019, All rights reserved.
+ */
+
+$fill-base: #fff;
+$radius-sm: 6px;
+$border-color-base: #ddd;
+$popover-arrow-width: 14px;
+
+.milkui-popup {
+  height: 100%;
+}
+
+.milkui-popup__trigger {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.milkui-popup__content-wrap {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.milkui-popup__content__inner {
+  position: relative;
+  background-color: $fill-base;
+  border-radius: $radius-sm;
+  z-index: 2000;
+}
+
+.milkui-popup__content__arrow {
+  position: absolute;
+  width: $popover-arrow-width;
+  height: $popover-arrow-width;
+  background-color: $fill-base;
+  transform: rotate(45deg);
+
+  &.bottomRight {
+    left: 85%;
+    top: -#{$popover-arrow-width / 2};
+  }
+
+  &.topRight {
+    left: 85%;
+    bottom: -#{$popover-arrow-width / 2};
+  }
+
+  &.bottomLeft {
+    left: 15%;
+    top: -#{$popover-arrow-width / 2};
+  }
+
+  &.topLeft {
+    left: 15%;
+    bottom: -#{$popover-arrow-width / 2};
+  }
+}
+
+.milkui-popup__content__body {
+  position: relative;
+  font-size: 32px;
+}
