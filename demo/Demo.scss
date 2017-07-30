@@ -22,64 +22,64 @@ body {
   background: $fill-body;
 }
 
-.demo-panel {
+.demo__panel {
   padding: 0 25px;
 }
 
-.demo-title {
+.demo__title {
   margin-top: 20px;
   font-size: 60px;
 }
 
-.demo-description {
+.demo__description {
   margin-top: 15px;
   font-size: 26px;
   color: #3b3b3b;
 }
 
-.demo-item {
+.demo__item {
   margin-top: 20px;
 }
 
-.demo-bar {
+.demo__bar {
   display: flex;
   height: $bar-height;
   background: $fill-base;
 }
 
-.demo-bar-header, .demo-bar-body, .demo-bar-footer {
+.demo__bar__header, .demo__bar__body, .demo__bar__footer {
   display: flex;
   flex: 1;
 }
 
-.demo-bar-header, .demo-bar-footer {
+.demo__bar__header, .demo__bar__footer {
   .milkui-popup__trigger {
     padding: 0 $h-spacing-lg;
   }
 }
 
-.demo-bar-body {
+.demo__bar__body {
   align-items: center;
   justify-content: center;
   font-size: $font-size-display-sm;
 }
 
-.demo-bar-footer {
+.demo__bar__footer {
   align-items: center;
   font-size: $font-size-caption;
   justify-content: flex-end;
 }
 
-.demo-icon {
+.demo__icon {
   width: $icon-size-md;
   height: $icon-size-md;
 }
 
-.demo-bar-icon {
+.demo__bar__icon {
   fill: $brand-primary;
 }
 
-.demo-popup-content {
+.demo__popup-content {
   .item {
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ body {
       border-top-width: 0;
     }
   }
-  .item-icon {
+  .item__icon {
     margin-right: $h-spacing-md;
   }
 }

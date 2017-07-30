@@ -9,7 +9,6 @@ import React, { Component } from 'react';
 
 import Icon from './svg';
 import iconEllipsis from './svg/ellipsis.svg';
-import iconMenu from './svg/menu.svg';
 import iconHelp from './svg/help.svg';
 import iconQrcode from './svg/qrcode.svg';
 import iconScan from './svg/scan.svg';
@@ -21,73 +20,73 @@ class Demo extends Component {
     const popupContent = this.renderPopupContent();
 
     return (
-      <div className="demo-panel">
-        <div className="demo-title">Milk UI</div>
-        <div className="demo-description">
+      <div className="demo__panel">
+        <div className="demo__title">Milk UI</div>
+        <div className="demo__description">
           Demo Page 😀.
         </div>
-        <div className="demo-item">
-          <div className="demo-bar">
-            <div className="demo-bar-header" />
-            <div className="demo-bar-body">bottomRight</div>
-            <div className="demo-bar-footer">
+        <div className="demo__item">
+          <div className="demo__bar">
+            <div className="demo__bar__header" />
+            <div className="demo__bar__body">右下方弹出</div>
+            <div className="demo__bar__footer">
               <Popup
                 placement="bottomRight"
                 content={popupContent}
                 offsetX={-20}
                 offsetY={10}
               >
-                <Icon className="demo-icon demo-bar-icon" glyph={iconEllipsis} />
+                <Icon className="demo__icon demo__bar__icon" glyph={iconEllipsis} />
               </Popup>
             </div>
           </div>
         </div>
-        <div className="demo-item">
-          <div className="demo-bar">
-            <div className="demo-bar-header">
+        <div className="demo__item">
+          <div className="demo__bar">
+            <div className="demo__bar__header">
               <Popup
                 placement="bottomLeft"
                 content={popupContent}
                 offsetX={5}
                 offsetY={10}
               >
-                <Icon className="demo-icon demo-bar-icon" glyph={iconMenu} />
+                <Icon className="demo__icon demo__bar__icon" glyph={iconEllipsis} />
               </Popup>
             </div>
-            <div className="demo-bar-body">bottomLeft</div>
-            <div className="demo-bar-footer" />
+            <div className="demo__bar__body">左下方弹出</div>
+            <div className="demo__bar__footer" />
           </div>
         </div>
-        <div className="demo-item">
-          <div className="demo-bar">
-            <div className="demo-bar-header" />
-            <div className="demo-bar-body">topRight</div>
-            <div className="demo-bar-footer">
+        <div className="demo__item">
+          <div className="demo__bar">
+            <div className="demo__bar__header" />
+            <div className="demo__bar__body">右上方弹出</div>
+            <div className="demo__bar__footer">
               <Popup
                 placement="topRight"
                 content={popupContent}
                 offsetX={-20}
                 offsetY={-10}
               >
-                <Icon className="demo-icon demo-bar-icon" glyph={iconEllipsis} />
+                <Icon className="demo__icon demo__bar__icon" glyph={iconEllipsis} />
               </Popup>
             </div>
           </div>
         </div>
-        <div className="demo-item">
-          <div className="demo-bar">
-            <div className="demo-bar-header">
+        <div className="demo__item">
+          <div className="demo__bar">
+            <div className="demo__bar__header">
               <Popup
                 placement="topLeft"
                 content={popupContent}
                 offsetX={8}
                 offsetY={-10}
               >
-                <Icon className="demo-icon demo-bar-icon" glyph={iconMenu} />
+                <Icon className="demo__icon demo__bar__icon" glyph={iconEllipsis} />
               </Popup>
             </div>
-            <div className="demo-bar-body">topLeft</div>
-            <div className="demo-bar-footer" />
+            <div className="demo__bar__body">左上方弹出</div>
+            <div className="demo__bar__footer" />
           </div>
         </div>
       </div>
@@ -96,18 +95,18 @@ class Demo extends Component {
 
   renderPopupContent() {
     return (
-      <div className="demo-popup-content">
+      <div className="demo__popup-content">
         <div className="item">
-          <Icon className="demo-icon item-icon" glyph={iconScan} />
-          <span className="item-text">扫一扫</span>
+          <Icon className="demo__icon item__icon" glyph={iconScan} />
+          <span>扫一扫</span>
         </div>
         <div className="item">
-          <Icon className="demo-icon item-icon" glyph={iconQrcode} />
-          <span className="item-text">我的二维码</span>
+          <Icon className="demo__icon item__icon" glyph={iconQrcode} />
+          <span>我的二维码</span>
         </div>
         <div className="item">
-          <Icon className="demo-icon item-icon" glyph={iconHelp} />
-          <span className="item-text">帮助</span>
+          <Icon className="demo__icon item__icon" glyph={iconHelp} />
+          <span>帮助</span>
         </div>
       </div>
     );

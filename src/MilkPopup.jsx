@@ -93,7 +93,6 @@ class MilkPopup extends Component {
   }
 
   onTriggerClick() {
-    console.info('=== this.contentWrapEle ===', this.contentWrapEle);
     if (!this.contentWrapEle) {
       this.contentEle = this.renderContent();
       this.contentWrapEle = this.renderContentWrap();
@@ -114,7 +113,6 @@ class MilkPopup extends Component {
 
   setWrapStyle(style) {
     this.wrapStyleMap = { ...this.wrapStyleMap, ...style };
-    console.info('=== this.wrapStyleMap ===', this.wrapStyleMap);
     let arr = [];
     Object.keys(this.wrapStyleMap).forEach((attr) => {
       arr = [...arr, `${attr}: ${this.wrapStyleMap[attr]}`];
@@ -124,7 +122,6 @@ class MilkPopup extends Component {
 
   assignContentPosition() {
     const position = this.getContentPosition();
-    console.info('=== position ===', position);
     this.setWrapStyle({
       top: `${position.top}px`,
       left: `${position.left}px`,
@@ -134,8 +131,6 @@ class MilkPopup extends Component {
   getContentPosition() {
     const { placement, offsetX, offsetY } = this.props;
     const position = this.getPosition(placement, this.triggerEle, this.contentWrapEle);
-    console.info('=== position ===', position);
-    console.info('offsetX, offsetY', offsetX, offsetY);
     position.left += offsetX;
     position.top += offsetY;
     return position;
