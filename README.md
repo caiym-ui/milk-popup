@@ -39,7 +39,7 @@ import Popup from 'milkui-popup';
 
 ## Properties
 
-| Properties | Type | Description | Default |
+| Property | Type | Description | Default |
 | -- | -- | -- | -- |
 | placement | String | 显示位置 | 'bottomLeft' |
 | contentClassName | String | 自定义的 class 类名 | '' |
