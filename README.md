@@ -1,20 +1,43 @@
-# milk-popup
+# milkui-popup
 
-组件描述
+> 在点击控件或者某个区域后，浮出一个气泡菜单来做更多的操作。 如果设置了遮罩层，建议通过点击遮罩层的任一位置，进行退出。
 
-## 效果图
+## Overview
 
-...some images
+![image](https://user-images.githubusercontent.com/11053605/28750107-95a89c06-7511-11e7-8c21-a3a72af99b98.png)
 
-## 使用
+## Example
 
 ```js
-import Popup from 'milk-popup';
+import Popup from 'milkui-popup';
 
-<Popup></Popup>
+<Popup
+  placement="bottomRight"
+  content={popupContent}
+  offsetX={-20}
+  offsetY={10}
+>
+  <Icon className="demo__icon demo__bar__icon" glyph={iconEllipsis} />
+</Popup>
+
+// popupContent
+<div className="demo__popup-content">
+  <div className="item">
+    <Icon className="demo__icon item__icon" glyph={iconScan} />
+    <span>扫一扫</span>
+  </div>
+  <div className="item">
+    <Icon className="demo__icon item__icon" glyph={iconQrcode} />
+    <span>我的二维码</span>
+  </div>
+  <div className="item">
+    <Icon className="demo__icon item__icon" glyph={iconHelp} />
+    <span>帮助</span>
+  </div>
+</div>
 ```
 
-## 参数
+## Properties
 
 | Properties | Type | Description | Default |
 | -- | -- | -- | -- |
@@ -27,16 +50,16 @@ import Popup from 'milk-popup';
 | content | React node | 显示内容 | '' |
 | containerNode | React node | 显示内容的容器 | document.body |
 
-## 开发
-
-### install
+## Develop
 
 ```bash
-cnpm i milk-dev -g    # 组件开发工具
+cnpm i milk-dev -g    # dev tool
+
 cnpm install
+
 npm start
 ```
 
-## 链接
+## Links
 
-- [Issues](https://github.com/milk-ui/milk-popup/issues)
+- [Issues](https://github.com/milk-ui/milkui-popup/issues)

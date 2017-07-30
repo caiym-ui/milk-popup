@@ -1,8 +1,8 @@
 {
-  "name": "milk-popup",
+  "name": "milkui-popup",
   "version": "0.1.0",
   "description": "milk ui component for build mobile web app",
-  "repository": "https://github.com/milk-ui/milk-popup",
+  "repository": "https://github.com/milk-ui/milkui-popup",
   "author": "caiyongmin",
   "main": "build/bundle.js",
   "scripts": {

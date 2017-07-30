@@ -1,5 +1,5 @@
 /**
- * MilkPopup of milkui-component
+ * Popup of milkui-component
  * @author caiyongmin
  *
  * Copyright 2017-2019, All rights reserved.
@@ -15,7 +15,7 @@ import './index.scss';
 
 let number = 0;  // popup 弹出框序号
 
-class MilkPopup extends Component {
+class Popup extends Component {
   static propTypes = {
     placement: PropTypes.string,
     contentClassName: PropTypes.string,
@@ -180,4 +180,4 @@ class MilkPopup extends Component {
   }
 }
 
-export default MilkPopup;
+export default Popup;

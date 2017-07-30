@@ -1,10 +1,10 @@
 /**
- * Milkpopup of milkui-component
+ * Popup of milkui-component
  * @author caiyongmin
  *
  * Copyright 2017-2019, All rights reserved.
  */
 
-import Milkpopup from './Milkpopup';
+import Popup from './Popup';
 
-export default Milkpopup;
+export default Popup;
