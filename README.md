@@ -1,5 +1,9 @@
 # milkui-popup
 
+[![npm version](https://img.shields.io/npm/v/milkui-dialog.svg?style=flat)](https://www.npmjs.com/package/milkui-dialog) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md)
+
+[![NPM](https://nodei.co/npm/milkui-dialog.png?downloads=true&downloadRank=true)](https://nodei.co/npm/milkui-dialog/)
+
 > 在点击控件或者某个区域后，浮出一个气泡菜单来做更多的操作。 如果设置了遮罩层，建议通过点击遮罩层的任一位置，进行退出。
 
 ## Overview
